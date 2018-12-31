@@ -7,10 +7,10 @@ alias tmx.update='pkg upgrade'
 alias tmx.reload='termux-reload-settings'
 
 # -- linux deploy
-function ld.conf() { tsu -c "/data/data/ru.meefik.linuxdeploy/bin/linuxdeploy config"; }
-function ld.start() { tsu -c "/data/data/ru.meefik.linuxdeploy/bin/linuxdeploy -p $1 start -m"; }
-function ld.stop() { tsu -c "/data/data/ru.meefik.linuxdeploy/bin/linuxdeploy -p $1 stop -u"; }
-function ld.ssh() { ssh android@192.168.1.14; }
+function ld.conf() { tsu -c "/data/data/ru.meefik.linuxdeploy/files/bin/linuxdeploy config"; }
+function ld.start() { tsu -c "/data/data/ru.meefik.linuxdeploy/files/bin/linuxdeploy -p $1 start -m"; }
+function ld.stop() { tsu -c "/data/data/ru.meefik.linuxdeploy/files/bin/linuxdeploy -p $1 stop -u"; }
+function ld.ssh() { ssh hed0n1st@localhost; }
 
 # -- various aliases
 alias ..='cd ..'
