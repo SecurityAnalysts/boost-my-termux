@@ -65,8 +65,8 @@ echo -e "\033[34m[x]Installing python packages/ruby gems\033[0m"
 echo -e "\033[33m[x]--- python packages and gits\033[0m"
 pip install --upgrade pip
 pip install pip-review
-pip install pyscdl
 pip install mps-youtube
+pip install youtube-dl
 pip install spotdl
 
 clear
@@ -82,7 +82,7 @@ echo -e "\033[34m[x]Installing personal packages and tools\033[0m"
 FDROID_REPO='https://f-droid.org/repo/'
 HOME='/data/data/com.termux/files/home/'
 APK_LIST=(
-            com.termux.api_27.apk
+            com.termux.api_28.apk
             com.termux.boot_5.apk
             com.termux.styling_24.apk
             com.termux.tasker_3.apk
@@ -117,8 +117,7 @@ echo -e
 read -p "Press enter to continue ..."
 
 # -- import previous config
-cd && mkdir ~/.irssi && mkdir ~/.ssh
-cp /sdcard/.backup/irssi/* ~/.irssi/
+cd && mkdir ~/.ssh
 cp /sdcard/.backup/ssh/*.pub ~/.ssh/
 cat ~/.ssh/*.pub > ~/.ssh/authorized_keys
 rm -f ~/.ssh/*.pub
